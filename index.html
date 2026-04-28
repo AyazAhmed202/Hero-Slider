@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Slider</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav aria-label="Main navigation">
+  <div class="head">Hero Slider</div>
+  <ul class="nav-list">
+    <li><a href="#">Work</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SLIDER -->
+<section id="hero" aria-label="Featured projects and services slider" role="region">
+
+  <!-- Slides -->
+  <article class="slide active" aria-hidden="false">
+    <div class="slide-bg" style="background-image: url('images/AI\ image.jpg')" role="img" aria-label="AI neural network visualization"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <span class="slide-tag">Featured Project</span>
+      <h1 class="slide-title">AI Project<br>Demo</h1>
+      <p class="slide-desc">Exploring the frontier of machine learning — a real-time neural interface that learns and adapts to user behavior with zero latency.</p>
+      <a href="#" class="slide-cta" aria-label="View AI Project Demo">View Project
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <article class="slide" aria-hidden="true">
+    <div class="slide-bg" style="background-image: url('images/Web\ Dev\ img.jpg')" role="img" aria-label="Web development code on screen"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <span class="slide-tag">Services</span>
+      <h1 class="slide-title">Web Dev<br>Services</h1>
+      <p class="slide-desc">Frontend development focuses on building the visual and interactive parts of websites using clean code, responsive design, and smooth user experiences.</p>
+      <a href="#" class="slide-cta" aria-label="Learn more about web development services">Learn More
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <article class="slide" aria-hidden="true">
+    <div class="slide-bg" style="background-image: url('images/UIUX\ Design.jpg')" role="img" aria-label="UI/UX design mockups on desk"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <span class="slide-tag">Design</span>
+      <h1 class="slide-title">UX / UI<br>Design</h1>
+      <p class="slide-desc">Crafting interfaces that feel inevitable. Research-driven, detail-obsessed design systems built to scale across every screen size.</p>
+      <a href="#" class="slide-cta" aria-label="View UI/UX design portfolio">View Portfolio
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <article class="slide" aria-hidden="true">
+    <div class="slide-bg" style="background-image: url('images/Mob\ App\ img.jpg')" role="img" aria-label="Mobile app on smartphone screen"></div>
+    <div class="slide-overlay"></div>
+    <div class="slide-content">
+      <span class="slide-tag">Mobile</span>
+      <h1 class="slide-title">Mobile<br>Apps</h1>
+      <p class="slide-desc">Cross-platform mobile experiences built with React Native. Smooth, native-feeling apps shipped to both iOS and Android simultaneously.</p>
+      <a href="#" class="slide-cta" aria-label="Learn more about mobile app development">Get a Quote
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </article>
+
+  <!-- Controls -->
+  <button class="arrow" id="prev-btn" aria-label="Previous slide">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M11 4L6 9l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="arrow" id="next-btn" aria-label="Next slide">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M7 4l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- Dots -->
+  <div class="dots" role="tablist" aria-label="Slide indicators"></div>
+
+  <!-- Slide counter -->
+  <div class="slide-counter" aria-hidden="true">
+    <span id="cur-num">01</span> / <span id="tot-num">04</span>
+  </div>
+
+  <!-- Progress bar -->
+  <!-- <div class="progress" id="progress-bar" aria-hidden="true"></div> -->
+</section>
+
+<!-- CARD -->
+<section class="section-card" aria-label="Services overview">
+  <div class="card">
+    <h3>Artificial Intellengence</h3>
+    <p>Artificial Intelligence is a technology that enables machines to think, learn, and make decisions like humans.</p></div>
+  <div class="card">
+    <h3>Web Development</h3>
+    <p>Web development is the process of creating and maintaining websites and web applications using technologies like HTML, CSS, and JavaScript.</p>
+  </div>
+  <div class="card">
+    <h3>UI/UX Design</h3>
+    <p>UI/UX is the process of designing user-friendly interfaces (UI) and creating smooth, enjoyable user experiences (UX) for websites and applications.</p>
+  </div>
+  <div class="card">
+    <h3>MOB APP</h3>
+    <p>Mobile app development is the process of creating applications for smartphones and tablets that run on Android or iOS platforms.</p>
+  </div>
+</section>
+
+<footer>© 2026 Portfolio. All rights reserved.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
